@@ -1,1 +1,1 @@
-# Real-Time-Event-Ticketing-System-Frontend-Reactjs
+# Real-Time-Event-Ticketing-System
