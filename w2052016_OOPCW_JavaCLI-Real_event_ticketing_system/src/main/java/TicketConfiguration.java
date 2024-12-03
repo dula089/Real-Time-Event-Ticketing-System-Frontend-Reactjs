@@ -46,29 +46,29 @@ class Configuration {
     }
 }
 
-public class TicketConfiguration{
-    public static Configuration configurationSystem(){
-            Scanner scanner = new Scanner(System.in);
-            int totalTickets= 0, ticketReleaseRate = 0 , customerRetrievalRate = 0, maxTicketCapacity = 0;
+public class TicketConfiguration {
+    public static Configuration configurationSystem() {
+        Scanner scanner = new Scanner(System.in);
+        int totalTickets = 0, ticketReleaseRate = 0, customerRetrievalRate = 0, maxTicketCapacity = 0;
 
-            while(totalTickets <= 0){
-                System.out.print("Enter Total Tickets(must be > 0): ");
-                totalTickets = scanner.nextInt();
-            }
-            while(ticketReleaseRate<=0){
-                System.out.print("Enter Ticket Release Rate(must be > 0): ");
-                ticketReleaseRate = scanner.nextInt();
-            }
-            while(customerRetrievalRate<=0){
-                System.out.print("Enter Customer Retrieval Rate(must be > 0): ");
-                customerRetrievalRate = scanner.nextInt();
-            }
-            while(maxTicketCapacity<= totalTickets){
-                System.out.print("Enter Max Ticket Capacity(must be > 0): ");
-                maxTicketCapacity = scanner.nextInt();
-            }
-            scanner.close();
-            return new Configuration(totalTickets, ticketReleaseRate, customerRetrievalRate, maxTicketCapacity);
+        while (totalTickets <= 0) {
+            System.out.print("Enter Total Tickets(must be > 0): ");
+            totalTickets = scanner.nextInt();
+        }
+        while (ticketReleaseRate <= 0) {
+            System.out.print("Enter Ticket Release Rate(must be > 0): ");
+            ticketReleaseRate = scanner.nextInt();
+        }
+        while (customerRetrievalRate <= 0) {
+            System.out.print("Enter Customer Retrieval Rate(must be > 0): ");
+            customerRetrievalRate = scanner.nextInt();
+        }
+        while (maxTicketCapacity <= totalTickets) {
+            System.out.print("Enter Max Ticket Capacity(must be > 0): ");
+            maxTicketCapacity = scanner.nextInt();
+        }
+        scanner.close();
+        return new Configuration(totalTickets, ticketReleaseRate, customerRetrievalRate, maxTicketCapacity);
 
     }
 
