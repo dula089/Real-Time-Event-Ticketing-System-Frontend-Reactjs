@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Real-Time-Event-Ticketing-System--Frontend-Reactjs-vite-tailwindcss--backend-springboot.iml" filepath="$PROJECT_DIR$/.idea/Real-Time-Event-Ticketing-System--Frontend-Reactjs-vite-tailwindcss--backend-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/w2052016_OOPCW_JavaCLI-Real_event_ticketing_system/w2052016_OOPCW_JavaCLI-Real_event_ticketing_system.iml" filepath="$PROJECT_DIR$/w2052016_OOPCW_JavaCLI-Real_event_ticketing_system/w2052016_OOPCW_JavaCLI-Real_event_ticketing_system.iml" />
     </modules>
   </component>
