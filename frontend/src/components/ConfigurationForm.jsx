@@ -7,13 +7,13 @@ const ConfigurationForm = ({
   errors,
 }) => {
   return (
-    <div className="flex items-center justify-center min-h-80  py-5 font-mono">
+    <div className="flex items-center justify-center min-h-80  py-5 font-mono ">
       <div className=" flex-col w-1/3">
         <form
           onSubmit={handleSubmit}
           className="bg-gray-50 shadow-md rounded px-8 pt-6 pb-8 mb-4 "
         >
-          <h2 className="font-bold text-2xl py-2 text-center">
+          <h2 className="font-bold text-2xl py-2 text-center text-blue-900">
             Configuration form
           </h2>
           <div>
