@@ -60,7 +60,7 @@ class Configuration {
         System.out.print("Enter max ticket capacity(must>0): ");
         maxTicketCapacity=getValidMaxCapacity(scanner, totalTickets);
 
-        Logger.log("Configuration completed: \nTotal Tickets= "+totalTickets+", \nTicket Release Rate= "+ticketReleaseRate+", \n Customer Retrieval Rate= "+
+        Logger.log("Configuration completed: \nTotal Tickets= "+totalTickets+",\nTicket Release Rate= "+ticketReleaseRate+",\nCustomer Retrieval Rate= "+
                 customerRetrievalRate+",\nMax Capacity= "+maxTicketCapacity);
     }
     private int getValidPositiveInteger(Scanner scanner) {
