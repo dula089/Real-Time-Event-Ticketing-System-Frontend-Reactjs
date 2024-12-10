@@ -1,0 +1,23 @@
+2024-12-10 23:46:34 - Ticketing system CLI started.
+2024-12-10 23:47:13 - Ticketing system CLI started.
+2024-12-10 23:47:15 - Ticketing system CLI started.
+2024-12-10 23:47:18 - Starting system configuration...
+2024-12-10 23:47:35 - Configuration completed: 
+Total Tickets= 50, 
+Ticket Release Rate= 20, 
+ Customer Retrieval Rate= 10,
+Max Capacity= 100
+2024-12-10 23:47:35 - System configured with 50 tickets.
+2024-12-10 23:48:05 - Configuration saved to JSON file: confi.json
+2024-12-10 23:48:16 - Loading configuration from JSON file: confi.json
+2024-12-10 23:48:16 - Configuration loaded from JSON file: confi.json
+2024-12-10 23:48:22 - Exiting system...
+2024-12-11 00:00:03 - Ticketing system CLI started.
+2024-12-11 00:00:09 - Starting system configuration...
+2024-12-11 00:00:18 - Configuration completed: 
+Total Tickets= 26, 
+Ticket Release Rate= 40, 
+ Customer Retrieval Rate= 50,
+Max Capacity= 500
+2024-12-11 00:00:18 - System configured with 26 tickets.
+2024-12-11 00:00:20 - Exiting system...
