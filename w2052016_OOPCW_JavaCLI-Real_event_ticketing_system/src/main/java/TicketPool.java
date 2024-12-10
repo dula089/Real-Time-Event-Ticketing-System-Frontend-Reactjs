@@ -1,31 +1,32 @@
-import java.util.LinkedList;
+import java.util.concurrent.atomic.AtomicInteger;
 
-class TicketPool {
-    private final LinkedList<Integer>tickets=new LinkedList<>();
-    private final int capacity;
+class TicketPool{
+    private AtomicInteger ticketsAvailable;
+    private final int maxCapacity;
 
-    public TicketPool(int capacity){
-        this.capacity=capacity;
+    public TicketPool(int totalTickets,int maxCapacity){
+        this.ticketsAvailable=new AtomicInteger(totalTickets);
+        this.maxCapacity=maxCapacity;
     }
-
-    public synchronized void addTickets(int count) throws InterruptedException{
-        while(tickets.size()+ count> capacity){
-            wait();
+    public synchronized void addTickets(int number){
+        if(ticketsAvailable.get()+number<=maxCapacity){
+            ticketsAvailable.addAndGet(number);
+            Logger.log(number+" tickets added. Tickets available: "+ ticketsAvailable.get());
+        }else{
+            Logger.log("cannot add more tickets, max capacity reached.");
         }
-        for(int i=0; i<count; i++){
-            tickets.add(1);
-        }
-        System.out.println("Added "+count+" tickets. Total available: "+ tickets.size());
-        notifyAll();
     }
-    public synchronized  void removeTickets(int count) throws InterruptedException{
-        while(tickets.size()<count){
-            wait();
+    public synchronized boolean removeTicket(){
+        if(ticketsAvailable.get()>0){
+            ticketsAvailable.decrementAndGet();
+            Logger.log("1 ticket removed. Tickets available: "+ticketsAvailable.get());
+            return true;
+        }else{
+            Logger.log("No tickets available for purchase.");
+            return false;
         }
-        for(int i=0; i<count; i++){
-            tickets.remove();
-        }
-        System.out.println("Removed "+count+" tickets. Remaining: "+tickets.size());
-        notifyAll();
+    }
+    public int getTicketsAvailable(){
+        return ticketsAvailable.get();
     }
 }
