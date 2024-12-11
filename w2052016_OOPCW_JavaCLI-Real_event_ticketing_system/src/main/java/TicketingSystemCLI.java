@@ -10,6 +10,7 @@ public class TicketingSystemCLI {
 
         while(true){
             try{
+                System.out.println("\nWelcome to Real-Time-Event Ticketing System!");
                 System.out.println("\nMenu");
                 System.out.println("1.Configuration");
                 System.out.println("2.Start the System");
