@@ -1,4 +1,4 @@
-package com.example.ticketing.system_backend.model;
+package com.example.ticketing.system_backend.utils;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

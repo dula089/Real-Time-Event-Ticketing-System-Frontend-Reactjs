@@ -1,7 +1,5 @@
 package com.example.ticketing.system_backend.utils;
 
-import com.example.ticketing.system_backend.model.TicketPool;
-
 public class TicketingSystem {
     private boolean running=false;
     private TicketPool ticketPool;

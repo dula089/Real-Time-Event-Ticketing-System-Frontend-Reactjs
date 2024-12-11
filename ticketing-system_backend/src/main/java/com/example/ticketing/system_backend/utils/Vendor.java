@@ -1,7 +1,5 @@
 package com.example.ticketing.system_backend.utils;
 
-import com.example.ticketing.system_backend.model.TicketPool;
-
 public class Vendor implements Runnable {
     private final TicketPool ticketPool;
     private final int releaseRate;
