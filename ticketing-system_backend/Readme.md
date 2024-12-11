@@ -4,11 +4,11 @@ This project is a backend implementation for a ticketing system using Spring Boo
 
 ## Table of Contents
 
-- [Technologies Used](#Technologies Used)
+- [Technologies Used](#technologies-used)
 
-- [Project Structure](#Project Structure)
+- [Project Structure](#project-structure)
 
-- [Setup and Installation](#Setup and Installation)
+- [Setup and Installation](#setup-and-installation)
 
 - [Endpoints](#Endpoints)
 
@@ -40,7 +40,7 @@ src/
 │   └── resources/
 │       ├── application.properties  # Application configuration
 │                     
-└── test/                          )
+└── test/                          
 ```
 
 ## Setup and Installation
