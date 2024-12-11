@@ -8,13 +8,8 @@
       <change afterPath="$PROJECT_DIR$/../ticketing-system_backend/src/main/java/com/example/ticketing/system_backend/controller/ConfigurationController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ticketing-system_backend/src/main/java/com/example/ticketing/system_backend/repository/ConfigurationRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ticketing-system_backend/src/main/java/com/example/ticketing/system_backend/service/ConfigurationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ticketing-system_backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../ticketing-system_backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +96,7 @@
       <updated>1733719686018</updated>
       <workItem from="1733719687068" duration="2118000" />
       <workItem from="1733818882020" duration="17490000" />
-      <workItem from="1733855037209" duration="1131000" />
+      <workItem from="1733855037209" duration="1638000" />
     </task>
     <task id="LOCAL-00001" summary="commit changes">
       <option name="closed" value="true" />
@@ -223,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733856148818</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="updates">
+      <option name="closed" value="true" />
+      <created>1733856627726</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733856627726</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
