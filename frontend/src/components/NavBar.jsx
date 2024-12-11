@@ -19,7 +19,7 @@ const NavBar = () => {
             Configuration System
           </Link>
           <Link
-            to="/logs"
+            to="/logs "
             className="text-white hover:bg-blue-700 px-12 py-2 rounded transition"
           >
             Logs
