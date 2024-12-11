@@ -13,21 +13,25 @@ import org.springframework.web.bind.annotation.*;
 public class ConfigurationController {
     private final ConfigurationService configurationService;
 
+    //constructor injection for the configurationservice
     @Autowired
-    public ConfigurationController(ConfigurationService configurationService){
-        this.configurationService=configurationService;
+    public ConfigurationController(ConfigurationService configurationService) {
+        this.configurationService = configurationService;
     }
 
+    //endpoint to save a new configuration
     @PostMapping
-    public ResponseEntity<Configuration> saveConfiguration(@RequestBody Configuration configuration){
-        Configuration savedConfiguration=configurationService.saveConfiguration(configuration);
+    public ResponseEntity<Configuration> saveConfiguration(@RequestBody Configuration configuration) {
+        Configuration savedConfiguration = configurationService.saveConfiguration(configuration);
         return new ResponseEntity<>(savedConfiguration, HttpStatus.CREATED);
     }
+
+    //endpoint to retrieve a configuration by ID
     @GetMapping("/{id}")
-    public ResponseEntity<Configuration>getConfiguration(@PathVariable Long id){
-        Configuration configuration=configurationService.getConfiguration(id);
-        return configuration!=null?
-                new ResponseEntity<>(configuration,HttpStatus.OK):
+    public ResponseEntity<Configuration> getConfiguration(@PathVariable Long id) {
+        Configuration configuration = configurationService.getConfiguration(id);
+        return configuration != null ?
+                new ResponseEntity<>(configuration, HttpStatus.OK) :
                 new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
