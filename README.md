@@ -92,81 +92,84 @@ src/
 
   ```npm run dev```
 
-4. Open your browser and navigate to ```txthttp://localhost:5173.
+4. Open your browser and navigate to ```http://localhost:5173.```
 
-Backend
+**Backend**
 
-Clone the repository and navigate to the backend directory:
+1. Clone the repository and navigate to the backend directory:
 
-git clone <repository-url>
-cd ticketing-system_backend
+  ```
+  git clone <repository-url>
+  cd ticketing-system_backend```
 
-Configure the database in application.properties:
-
+2. Configure the database in application.properties:
+```
 spring.datasource.url=jdbc:mysql://localhost:3306/ticketsystem?createDatabaseIfNotExist=true
 spring.datasource.username=root
-spring.datasource.password=<your_password>
+spring.datasource.password=<your_password>```
 
-Build and run the application:
-
+3. Build and run the application:
+```
 mvn clean install
-mvn spring-boot:run
+mvn spring-boot:run```
 
-The server will start on http://localhost:8081.
+4. The server will start on   ```
+http://localhost:8081.
+```
 
-CLI
+**CLI**
 
-Clone the repository and navigate to the CLI directory:
+1. Clone the repository and navigate to the CLI directory:
+  ```
+  git clone <repository-url>
+  cd Real-Time-Event-Ticketing-System
+   ```
+2. Build the project:
+  ```
+  mvn clean install
+  ```
+3. Run the CLI application:
+  ```
+ java -cp   target/<artifact_name>.jar  TicketingSystemCLI
+```
+4. Replace <artifact_name> with the generated JAR file name.
 
-git clone <repository-url>
-cd Real-Time-Event-Ticketing-System
+## Features
 
-Build the project:
+**Frontend**
 
-mvn clean install
+- Dynamic UI: Built with React and Tailwind CSS for rapid UI development.
 
-Run the CLI application:
+- Routing: Easy navigation with React Router DOM.
 
-java -cp target/<artifact_name>.jar TicketingSystemCLI
+- API Integration: Simplified API calls using Axios.
 
-Replace <artifact_name> with the generated JAR file name.
+**Backend**
 
-Features
+- RESTful API: Endpoints for ticket operations, configuration, and logs.
 
-Frontend
+- Persistence: Data stored in a MySQL database.
 
-Dynamic UI: Built with React and Tailwind CSS for rapid UI development.
+- Scalable Architecture: Modular services and repositories.
 
-Routing: Easy navigation with React Router DOM.
+**CLI**
 
-API Integration: Simplified API calls using Axios.
+- Dynamic Configuration: Real-time setup of ticketing parameters.
 
-Backend
+- Multithreaded Operations: Simulates vendor-customer interactions.
 
-RESTful API: Endpoints for ticket operations, configuration, and logs.
+- Persistence: Save and load configurations in JSON or text format.
 
-Persistence: Data stored in a MySQL database.
+- Logging: Logs system activities to a system.log file.
 
-Scalable Architecture: Modular services and repositories.
+## Endpoints
 
-CLI
+- Configuration Endpoints
 
-Dynamic Configuration: Real-time setup of ticketing parameters.
+- Save Configuration
 
-Multithreaded Operations: Simulates vendor-customer interactions.
-
-Persistence: Save and load configurations in JSON or text format.
-
-Logging: Logs system activities to a system.log file.
-
-Endpoints
-
-Configuration Endpoints
-
-Save Configuration
-
-POST /api/configuration
-
+- POST /api/configuration
+```txt
 Request Body:
 
 {
@@ -175,21 +178,21 @@ Request Body:
   "customerRetrievalRate": 5,
   "maxTicketCapacity": 500
 }
+```
+- Response: Created configuration object.
 
-Response: Created configuration object.
+- Get Configuration
 
-Get Configuration
+- GET /api/configuration/{id}
 
-GET /api/configuration/{id}
+- Response: Configuration object or ```404 Not Found```.
 
-Response: Configuration object or 404 Not Found.
+## Log Endpoints
 
-Log Endpoints
+- Create Log
 
-Create Log
-
-POST /api/logs
-
+- POST /api/logs
+```txt
 Request Body:
 
 {
@@ -197,27 +200,27 @@ Request Body:
   "dateTime": "2024-01-01T10:00:00",
   "message": "Ticket sale successful"
 }
+```
+- Response: Created log object.
 
-Response: Created log object.
+- CLI Menu Options
 
-CLI Menu Options
+ 1. Configure the system.
 
-Configure the system.
+ 2. Start ticketing operations.
 
-Start ticketing operations.
+ 3. Stop ticketing operations.
 
-Stop ticketing operations.
+ 4. Save configuration to JSON.
 
-Save configuration to JSON.
+ 5. Load configuration from JSON.
 
-Load configuration from JSON.
+ 6. Save configuration to text.
 
-Save configuration to text.
+ 7. Load configuration from text.
 
-Load configuration from text.
+ 8. Exit.
 
-Exit.
-
-License
+## License
 
 This project is licensed under the MIT License. Feel free to use and adapt it as needed.
