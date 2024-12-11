@@ -16,34 +16,44 @@ public class Configuration {
     private int customerRetrievalRate;
     private int maxTicketCapacity;
 
-    public Long getId(){
-        return  id;
+    //getters and setters
+    public Long getId() {
+        return id;
     }
-    public void setId(Long id){
-        this.id=id;
+
+    public void setId(Long id) {
+        this.id = id;
     }
-    public int getTotalTickets(){
+
+    public int getTotalTickets() {
         return totalTickets;
     }
-    public void setTotalTickets(int totalTickets){
-        this.totalTickets=totalTickets;
+
+    public void setTotalTickets(int totalTickets) {
+        this.totalTickets = totalTickets;
     }
-    public int getTicketReleaseRate(){
+
+    public int getTicketReleaseRate() {
         return ticketReleaseRate;
     }
-    public void setTicketReleaseRate(int ticketReleaseRate){
-        this.ticketReleaseRate=ticketReleaseRate;
+
+    public void setTicketReleaseRate(int ticketReleaseRate) {
+        this.ticketReleaseRate = ticketReleaseRate;
     }
-    public int getCustomerRetrievalRate(){
+
+    public int getCustomerRetrievalRate() {
         return customerRetrievalRate;
     }
-    public void setCustomerRetrievalRate(int customerRetrievalRate){
-        this.customerRetrievalRate=customerRetrievalRate;
+
+    public void setCustomerRetrievalRate(int customerRetrievalRate) {
+        this.customerRetrievalRate = customerRetrievalRate;
     }
-    public int getMaxTicketCapacity(){
+
+    public int getMaxTicketCapacity() {
         return maxTicketCapacity;
     }
-    public void setMaxTicketCapacity(int maxTicketCapacity){
-        this.maxTicketCapacity=maxTicketCapacity;
+
+    public void setMaxTicketCapacity(int maxTicketCapacity) {
+        this.maxTicketCapacity = maxTicketCapacity;
     }
 }
