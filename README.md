@@ -81,8 +81,8 @@ src/
 1. Clone the repository and navigate to the frontend directory:
 
   ```
-  git clone <repository-url>
-  cd <repository-directory>
+  git clone https://github.com/dula089/Real-Time-Event-Ticketing-System--Reactjs-vite-tailwindcss-springboot.git
+  cd Frontend
   ```
 2. Install dependencies:
 
@@ -99,7 +99,7 @@ src/
 1. Clone the repository and navigate to the backend directory:
 
   ```
-  git clone <repository-url>
+  git clone https://github.com/dula089/Real-Time-Event-Ticketing-System--Reactjs-vite-tailwindcss-springboot.git
   cd ticketing-system_backend```
 
 2. Configure the database in application.properties:
@@ -121,8 +121,8 @@ http://localhost:8081.
 
 1. Clone the repository and navigate to the CLI directory:
   ```
-  git clone <repository-url>
-  cd Real-Time-Event-Ticketing-System
+  git clone https://github.com/dula089/Real-Time-Event-Ticketing-System--Reactjs-vite-tailwindcss-springboot.git
+  cd w2052016_OOPCW_JavaCLI-Real_event_ticketing_system
    ```
 2. Build the project:
   ```
